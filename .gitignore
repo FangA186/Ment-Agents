@@ -1,0 +1,7 @@
+.codex/
+.vscode/
+
+# Frontend generated/dependency artifacts
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
