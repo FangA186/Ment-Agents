@@ -1,0 +1,23 @@
+version: v1
+root_dir: ./config/prompts
+base_system: 00-base-system.md
+
+stages:
+  clarification:
+    system: 01-clarification-system.md
+    validator: 01-clarification-validator.md
+  compile:
+    system: 02-compile-system.md
+    validator: 02-compile-validator.md
+  assemble:
+    system: 03-assemble-system.md
+    validator: 03-assemble-validator.md
+  orchestrate:
+    system: 04-orchestrate-system.md
+    validator: 04-orchestrate-validator.md
+  reflection:
+    system: 05-reflection-system.md
+    validator: 05-reflection-validator.md
+  delivery:
+    system: 06-delivery-system.md
+    validator: 06-delivery-validator.md

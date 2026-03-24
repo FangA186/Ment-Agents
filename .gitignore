@@ -5,3 +5,10 @@
 frontend/node_modules/
 frontend/dist/
 frontend/dist-ssr/
+ui-group-01-core-flow/
+ui-preview-群聊编排-第一组/
+reports/
+scripts/
+技术选型.md
+AGENTS.md
+backend/*.log

@@ -1,0 +1,33 @@
+compiler:
+  mode: model_api # local_api | model_api
+  timeout_seconds: 20
+  local_api:
+    endpoint: http://127.0.0.1:9090/parse
+    api_key: ""
+  model_api:
+    endpoint: https://yunwu.ai/v1/chat/completions
+    api_key: "sk-UlOFbP9G52BtwbXQRENGmtFeCjH0LP8bGHtbQjWGvxYvRFUS"
+    model: gpt-5.4-mini-2026-03-17
+
+prompt_assets:
+  root_dir: ./config/prompts
+  manifest: ./config/prompts/manifest.yaml
+  base_system: 00-base-system.md
+  clarification:
+    system: 01-clarification-system.md
+    validator: 01-clarification-validator.md
+  compile:
+    system: 02-compile-system.md
+    validator: 02-compile-validator.md
+  assemble:
+    system: 03-assemble-system.md
+    validator: 03-assemble-validator.md
+  orchestrate:
+    system: 04-orchestrate-system.md
+    validator: 04-orchestrate-validator.md
+  reflection:
+    system: 05-reflection-system.md
+    validator: 05-reflection-validator.md
+  delivery:
+    system: 06-delivery-system.md
+    validator: 06-delivery-validator.md
